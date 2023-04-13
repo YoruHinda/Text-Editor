@@ -8,10 +8,22 @@ public class FileMenu extends JMenuBar {
     private JMenuItem saveFileItem = new JMenuItem("Save");
     private JMenuItem closeFileItem = new JMenuItem("Close");
 
-    public FileMenu(){
+    public FileMenu() {
         add(menu);
         menu.add(openFileItem);
         menu.add(saveFileItem);
         menu.add(closeFileItem);
+    }
+
+    public JMenuItem getOpenFileItem() {
+        return openFileItem;
+    }
+
+    public JMenuItem getSaveFileItem() {
+        return saveFileItem;
+    }
+
+    public JMenuItem getCloseFileItem() {
+        return closeFileItem;
     }
 }
